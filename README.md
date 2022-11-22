@@ -1,1 +1,4 @@
-# [NOTICE] Jak już to pobierasz to zmien troche ;)
+Moje pomysły na rozwiazanie zadań 
+
+
+* nie odpowiadam za to ze ktos skopiuje moje prace
