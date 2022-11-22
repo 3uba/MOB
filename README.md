@@ -1,1 +1,1 @@
-Jak już to pobierasz to zmien troche ;)
+# [NOTICE] Jak już to pobierasz to zmien troche ;)
