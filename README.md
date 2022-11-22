@@ -1,4 +1,4 @@
-Moje pomysły na rozwiazanie zadań 
+## Moje pomysły na rozwiazanie zadań 
 
 
-* nie odpowiadam za to ze ktos skopiuje moje prace
+nie odpowiadam za to ze ktos skopiuje moje prace
