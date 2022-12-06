@@ -1,4 +1,6 @@
-<style>.d{color:red}</style>
+<style>
+.d{color:red}
+</style>
 
 - zaleta korzystania z fragmenow jest mozliwosc ich dodawania, usuwania i zastepowania programowo, gdy aktywnosc juz dziala
 - za te czynnosci oraz zarzadanie stosem odpowiada klasa <b>menedzera fragmentow</b>
