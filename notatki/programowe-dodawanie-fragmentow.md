@@ -60,3 +60,13 @@ public FragmentTransaction add (
                             Bundle argsm, String tag)
 ```
 - poniweaz tak dodany fragment nie jest powiazny z grupa widokow aktywnosci, wiec nie ma potrzeby implementacji motody <b>onCreateView</b>
+## Transakcje fragmentow 
+- transakcje mozan wrzucic na stos za pomoca metody <b>addToBackStack</b>
+```
+fragmentManager fm = getFragmentmManager();
+fm.beginTransaction()
+    .replace(r.id.fragment_container, ExampleFragment.class, null)
+    .setReorderingAllowed(true)
+    .addToBackStack("tx_name")
+    .commit();
+```
