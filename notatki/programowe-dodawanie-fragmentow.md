@@ -50,3 +50,12 @@ protected void onCreate(Bundle savedInstanceState) {
 // (2) dodawanie fragmentu
 // (3) optymalizacja zmiany stanu
 // (4) zatweirdzenie transakcji
+- Fragment moga takze oferowac aktywnosci <b>swoje zachowanie</b> bez dostarczania dodatkowego ui (background behavior)
+- do dodania takiego fragmentu moza uzyc metody
+```
+public FragmentTransaction add(Fragment fragment, String tag)
+public FragmentTransaction add (
+                            Class<? extends Fragment> fragmentClass,
+                            Bundle argsm, String tag)
+```
+- poniweaz tak dodany fragment nie jest powiazny z grupa widokow aktywnosci, wiec nie ma potrzeby implementacji motody <b>onCreateView</b>
