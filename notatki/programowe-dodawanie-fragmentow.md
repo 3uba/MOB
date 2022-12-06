@@ -70,3 +70,8 @@ fm.beginTransaction()
     .addToBackStack("tx_name")
     .commit();
 ```
+## Menedzer fragmentow 
+- Wcisnienie przycisku Back lub wywylanie metody menedzzera fragmetnow popBackStack spowoducje zjecie ze stosy osatniej transakcji
+- Do odlozonej na stosie transkacji mozna sie odwolac przez 
+    - poana metodzie addToBackStack opcjonalna nazwe 
+    - identyfikator zwrocony przez moetode commit
