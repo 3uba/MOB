@@ -1,7 +1,3 @@
-<style>
-.d{color:red}
-</style>
-
 - zaleta korzystania z fragmenow jest mozliwosc ich dodawania, usuwania i zastepowania programowo, gdy aktywnosc juz dziala
 - za te czynnosci oraz zarzadanie stosem odpowiada klasa <b>menedzera fragmentow</b>
 - uzytkownik nie powinnien bezposrednio wchodzic w interakcje z menedzerem fragmentow - to jest odpowidzialnosci biblioteki jetpack navigation library
@@ -9,8 +5,8 @@
 - fragmenty moga takze zawierac inne fragmenty
 - kazdy fragment wymaga <b>unikalnego identyfikatora</b>, ktorego  mozez uzyc system do jego odtworzenia, gdy aktywnosc jest wznawiana 
 - do okreslenia identyfikatora moga sluzyc:
-    - atrybut <span class='d'>android:id</span> - unikalny ID
-    - atrybut <span class='d'>android:tag</span> - unikalny lancuch tekstowy
+    - atrybut <b>android:id</b> - unikalny ID
+    - atrybut <b>android:tag</b> - unikalny lancuch tekstowy
     - w razie braku ktoregokolwiek z powyzszych, system uzyje identyfikatora widoku kontenera
 
 ## Wyszukiwanie instancji fragmentu 
