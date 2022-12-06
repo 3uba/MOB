@@ -34,3 +34,21 @@ public Fragment fingFragmentByTag(String tag)
 </android.constraitnlayout.widget.ConstraintLayout>
 ```
 - Tym razem z kontenerem nie jest skojarzona zadna instancja fragmentu
+```
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activiy_main);
+    ...
+    FragmentManager fm = getSupportFramengtManager();
+    
+    fm.beginTransaction() 
+        .add(R.id.title, TitlesFragment.class, null)
+        .add(R.id.details, DetailsFragment.class, null)
+        .setReorderingAllowed(true)
+        .commit();
+}
+
+// (1) utowrzenie transakcji
+// (2) dodawanie fragmentu
+// (3) optymalizacja zmiany stanu
+// (4) zatweirdzenie transakcji
