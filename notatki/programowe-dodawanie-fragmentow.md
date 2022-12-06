@@ -1,0 +1,5 @@
+- zaleta korzystania z fragmenow jest mozliwosc ich dodawania, usuwania i zastepowania programowo, gdy aktywnosc juz dziala
+- za te czynnosci oraz zarzadanie stosem odpowiada klasa <b>menedzera fragmentow</b>
+- uzytkownik nie powinnien bezposrednio wchodzic w interakcje z menedzerem fragmentow - to jest odpowidzialnosci biblioteki jetpack navigation library
+- kazda aktywnosc typu fragment activity ma dostep do menedzera fragmentow dzieki metodzie <b>getSupportFragmentManager</b>
+- fragmenty moga takze zawierac inne fragmenty
