@@ -23,11 +23,16 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                long startTime = System.currentTimeMillis() / 100L;
                 new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        for (int j = 0; j < 250000; j++) {
-                            double percentage = (double) j / 250000 * 100;
+                        for (;;) {
+                            long currentTime = System.currentTimeMillis() / 100L;
+                            if(currentTime == startTime + 100) {
+                                break;
+                            }
+                            double percentage = (double)  (currentTime - startTime) ;
                             final String percentageString = String.format("%.0f%%", percentage);
                             runOnUiThread(new Runnable() {
                                 @Override
@@ -52,5 +57,4 @@ public class MainActivity extends AppCompatActivity {
     private void buttonClickedChangeText() {
         textView.setText("Zakończona czasochłonna funkcja");
     }
-
 }
